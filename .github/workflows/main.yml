@@ -4,7 +4,7 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  test-and-pull:
     runs-on: ubuntu-latest
 
     env:
@@ -72,7 +72,7 @@ jobs:
           password: ${{ env.SSH_PASSWORD }}
           port: ${{ env.SSH_PORT }}
           key: ${{ env.SSH_KEY }}
-          script: cd ~/server && docker-compose restart
+          script: cd ~/server && git pull && docker-compose restart
 
 
 
