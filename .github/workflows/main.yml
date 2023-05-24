@@ -1,4 +1,4 @@
-name: Testing
+name: Testing and pulling
 on:
   push:
     branches: [ main ]
@@ -15,6 +15,11 @@ jobs:
       DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
       SECRET_KEY: ${{ secrets.SECRET_KEY}}
       ALLOWED_HOSTS: ${{ secrets.ALLOWED_HOSTS }}
+      SSH_KEY: ${{ secrets.SSH_KEY }}
+      SSH_USER: ${{ secrets.SSH_USER }}
+      SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+      SSH_PORT: ${{ secrets.SSH_PORT }}
+      SSH_HOST: ${{ secrets.SSH_HOST }}
 
     services:
       postgres:
@@ -58,6 +63,17 @@ jobs:
           DB_PASSWORD: ${{ env.DB_PASSWORD }}
           SECRET_KEY: ${{ env.SECRET_KEY }}
           ALLOWED_HOSTS: ${{ env.ALLOWED_HOSTS }}
+
+      - name: Pulling data to server
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ env.SSH_HOST }}
+          username: ${{ env.SSH_USER }}
+          password: ${{ env.SSH_PASSWORD }}
+          port: ${{ env.SSH_PORT }}
+          key: ${{ env.SSH_KEY }}
+          script: cd ~/server && docker-compose restart
+
 
 
 
