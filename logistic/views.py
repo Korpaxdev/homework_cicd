@@ -2,6 +2,8 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.response import Response
+from rest_framework.views import APIView
 
 from logistic.models import Product, Stock
 from logistic.serializers import ProductSerializer, StockSerializer
@@ -26,3 +28,8 @@ class StockViewSet(ModelViewSet):
     permission_classes = (IsAuthenticatedOrReadOnly,)
 
     # при необходимости добавьте параметры фильтрации
+
+
+class HelloApiView(APIView):
+    def get(self, request):
+        return Response({'message': 'Hello World!'})
