@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "homework-ci-cd"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "homework_ci_cd"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+asgiref = "3.6.0"
+django = "4.1.7"
+django-filter = "23.1"
+djangorestframework = "3.14.0"
+psycopg2-binary = "2.9.5"
+pytz = "2023.3"
+sqlparse = "0.4.3"
+gunicorn = "^20.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

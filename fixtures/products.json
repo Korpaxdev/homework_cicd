@@ -1,0 +1,90 @@
+[
+  {
+    "model": "logistic.product",
+    "pk": 1,
+    "fields": {
+      "title": "Томаты",
+      "description": "Без описания"
+    }
+  },
+  {
+    "model": "logistic.product",
+    "pk": 2,
+    "fields": {
+      "title": "Огурцы",
+      "description": "Без описания"
+    }
+  },
+  {
+    "model": "logistic.product",
+    "pk": 3,
+    "fields": {
+      "title": "Соевые бобы",
+      "description": "Без описания"
+    }
+  },
+  {
+    "model": "logistic.product",
+    "pk": 4,
+    "fields": {
+      "title": "Ананасы",
+      "description": "Без описания"
+    }
+  },
+  {
+    "model": "logistic.product",
+    "pk": 5,
+    "fields": {
+      "title": "Яблоки",
+      "description": "Без описания"
+    }
+  },
+  {
+    "model": "logistic.product",
+    "pk": 6,
+    "fields": {
+      "title": "Апельсины",
+      "description": "Без описания"
+    }
+  },
+  {
+    "model": "logistic.product",
+    "pk": 7,
+    "fields": {
+      "title": "Мандарины",
+      "description": "Без описания"
+    }
+  },
+  {
+    "model": "logistic.product",
+    "pk": 8,
+    "fields": {
+      "title": "Персики",
+      "description": "Без описания"
+    }
+  },
+  {
+    "model": "logistic.product",
+    "pk": 9,
+    "fields": {
+      "title": "Помидоры Черри",
+      "description": "Без описания"
+    }
+  },
+  {
+    "model": "logistic.product",
+    "pk": 10,
+    "fields": {
+      "title": "Кокосы",
+      "description": "Без описания"
+    }
+  },
+  {
+    "model": "logistic.product",
+    "pk": 11,
+    "fields": {
+      "title": "Свеклы",
+      "description": "Без описания"
+    }
+  }
+]

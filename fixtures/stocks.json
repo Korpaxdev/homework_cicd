@@ -1,0 +1,79 @@
+[
+  {
+    "model": "logistic.stock",
+    "pk": 1,
+    "fields": {
+      "address": "Склад №1"
+    }
+  },
+  {
+    "model": "logistic.stock",
+    "pk": 2,
+    "fields": {
+      "address": "Склад №2"
+    }
+  },
+  {
+    "model": "logistic.stock",
+    "pk": 3,
+    "fields": {
+      "address": "Склад №3"
+    }
+  },
+  {
+    "model": "logistic.stock",
+    "pk": 4,
+    "fields": {
+      "address": "Склад №4"
+    }
+  },
+  {
+    "model": "logistic.stock",
+    "pk": 5,
+    "fields": {
+      "address": "Склад №5"
+    }
+  },
+  {
+    "model": "logistic.stock",
+    "pk": 6,
+    "fields": {
+      "address": "Склад №6"
+    }
+  },
+  {
+    "model": "logistic.stock",
+    "pk": 7,
+    "fields": {
+      "address": "Склад №7"
+    }
+  },
+  {
+    "model": "logistic.stock",
+    "pk": 8,
+    "fields": {
+      "address": "Склад №8"
+    }
+  },
+  {
+    "model": "logistic.stock",
+    "pk": 9,
+    "fields": {
+      "address": "Склад №9"
+    }
+  },
+  {
+    "model": "logistic.stock",
+    "pk": 10,
+    "fields": {
+      "address": "Склад №10"
+    }
+  },
+  {
+    "model": "logistic.stock",
+    "pk": 11,
+    "fields": {
+      "address": "Склад №11"
+    }
+  }
+]
